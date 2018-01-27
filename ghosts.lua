@@ -15,7 +15,7 @@ function player_switchteam( player_entity, old_team , new_team )
 	
 	-- Call the previous player_switchteam function to allow for map compatibility 
 	if type(function_table.player_switchteam) == "function" then
-		function_table.player_switchteam( player_entity, old, new )
+		function_table.player_switchteam( player_entity, old_team, new_team )
 	end
 	
 	local player = CastToPlayer(player_entity)
